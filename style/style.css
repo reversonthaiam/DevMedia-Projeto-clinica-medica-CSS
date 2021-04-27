@@ -1,0 +1,204 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lexend", sans-serif;
+  color: rgb(80, 80, 80);
+}
+
+.container {
+  width: 1024px;
+  margin: 0 auto;
+}
+
+header {
+  width: 100%;
+  height: 110px;
+  background-color: rgb(37, 208, 214);
+  display: flex;
+  align-items: center;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.img-logo {
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+.navegacao {
+  display: flex;
+}
+.navegacao li {
+  list-style: none;
+  margin: 0 15px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.navegacao li a {
+  text-decoration: none;
+  color: aliceblue;
+  transition: 1s;
+}
+
+.navegacao li a:hover {
+  color: black;
+}
+/*############## HEADER #############################*/
+
+.main {
+  background-image: url("../assets/recepcao2.jpg");
+  width: 100vw;
+  height: 90vh;
+  background-size: cover;
+  object-fit: cover;
+}
+.main-titulo {
+  display: flex;
+  align-items: center;
+  height: 90%;
+  color: aliceblue;
+}
+
+.main-titulo h1 {
+  font-size: 60px;
+  font-weight: bold;
+  text-shadow: 3px 3px 4px rgb(150, 199, 223);
+}
+/*############## MAIN #############################*/
+
+section .sobre {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+section .sobre h2 {
+  margin: 80px 0 30px;
+  font-size: 30px;
+}
+
+section .sobre p {
+  font-size: 18px;
+}
+
+.sobre-lista {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sobre-titulo-e-lista {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sobre-titulo-e-lista div h3 {
+  margin-bottom: 20px;
+}
+
+.sobre-titulo-e-lista div ul li {
+  margin-bottom: 5px;
+}
+
+/*############## ESPECIALIDADES #############################*/
+
+.especialidade {
+  text-align: center;
+}
+
+.especialidade h3 {
+  margin: 30px 0 20px;
+}
+.especialidade p {
+  margin: 0px 0 25px;
+}
+
+.especialidade-imagem {
+  display: flex;
+  flex-flow: row wrap;
+  text-align: center;
+}
+.especialidade-imagem figure {
+  margin: 15px 20px 30px 10px;
+  box-shadow: 1px 1px 10px rgb(23, 70, 71);
+}
+.especialidade-imagem figure img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.especialidade-imagem figure figcaption {
+  font-weight: bold;
+  margin: 12px;
+}
+
+.horarios{
+  
+  display: flex;
+  margin: 25px;
+  justify-content: center;
+}
+
+.horarios a {
+  background-color: rgb(37, 208, 214);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 180px;
+  height: 50px;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  box-shadow: 1px 1px 4px rgb(0, 0, 0);
+  
+}
+
+/*############## CONTATO #############################*/
+
+.contato{
+  margin-top: 50px;
+  text-align: center;
+}
+
+.contato h3, p{
+  
+  margin-bottom: 20px;
+}
+
+iframe{
+  margin: 30px 0 70px 0;
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px rgb(23, 70, 71);
+ 
+}
+
+
+/*############## RODAPE #############################*/
+
+footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: rgb(38, 116, 117);
+  color: white;
+  font-weight: bold;
+}
+
+footer div img{
+  margin-top: 20px;
+
+}

@@ -5,91 +5,113 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ClÍnica Medica</title>
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@300&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
-      <div>
-        <img src="./assets/logo.png" alt="Logo" />
-      </div>
+      <div class="container header">
+        <div class="img-logo">
+          <img src="./assets/logo.png" alt="Logo" />
+        </div>
 
-      <nav>
-        <ul>
-          <li><a href="#">Sobre</a></li>
-          <li><a href="#">Especialidades</a></li>
-          <li><a href="#">Contato</a></li>
-        </ul>
-      </nav>
+        <nav>
+          <ul class="navegacao">
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="especialidades.html">Especialidades</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
-    <main>
-      <h1>
-        CLÍNICA MÉDICA LIFE<br />
-        AQUI A GENTE CUIDA DE VOCÊ
-      </h1>
+    <main class="main">
+      <div class="container main-titulo">
+        <h1>
+          CLÍNICA MÉDICA LIFE<br />
+          AQUI A GENTE CUIDA DE VOCÊ
+        </h1>
+      </div>
     </main>
 
-    <section>
-      <h2>Sobre a clínica</h2>
-      <p>
-        Nossa clínica está pronta para receber nossos pacientes através de uma
-        excelente estrutura, comodidade e com a segurança de que você precisa.
-      </p>
-    </section>
-
-    <section>
-      <div>
-        <img src="./assets/medico.jpg" alt="medico" />
-      </div>
-
-      <div>
-        <div>
-          <h3>AQUI NA NOSSA CLÍNICA VOCÊ VAI ENCONTRAR</h3>
-        </div>
-        <div>
-          <ul>
-            <li>Horário flexivel. Atendemos de segunda a sabado</li>
-            <li>Estacionamento amplo com 600 vagas.</li>
-            <li>Sala de espera com TV e Wifi.</li>
-            <li>Agendamento pelo telefone ou WhatsApp.</li>
-            <li>Excelente localização.</li>
-            <li>Entrega de exames em sua residencia.</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <div>
-        <h3>Uma clinica de multiespecialidade</h3>
+    <section class="container">
+      <div class="sobre">
+        <h2 name="sobre">Sobre a clínica</h2>
         <p>
-          Nossa clinica possui diversas especialidades. Como ortopedia,
-          pediatria, geriatria, psicologia, fisioterapia e outros.
+          Nossa clínica está pronta para receber nossos pacientes através de uma
+          excelente<br />
+          estrutura, comodidade e com a segurança de que você precisa.
         </p>
       </div>
 
-      <div>
-        <div>
-          <img src="./assets/ortopedia.png" alt="" />
-          <p>ORTOPEDIA</p>
+      <div class="sobre-lista">
+        <div class="sobre-img">
+          <img src="./assets/medico.jpg" alt="medico" />
         </div>
-        <div>
-          <img src="./assets/pediatra.png" alt="" />
-          <p>PEDIATRA</p>
-        </div>
-        <div>
-          <img src="./assets/geriatra.png" alt="" />
-          <p>GERIATRA</p>
-        </div>
-      </div>
 
-      <div>
-        <button>VER HORARIOS</button>
+        <div class="sobre-titulo-e-lista">
+          <div>
+            <h3>AQUI NA NOSSA CLÍNICA VOCÊ VAI ENCONTRAR</h3>
+          </div>
+          <div>
+            <ul>
+              <li>Horário flexivel. Atendemos de segunda a sabado</li>
+              <li>Estacionamento amplo com 600 vagas.</li>
+              <li>Sala de espera com TV e Wifi.</li>
+              <li>Agendamento pelo telefone ou WhatsApp.</li>
+              <li>Excelente localização.</li>
+              <li>Entrega de exames em sua residencia.</li>
+            </ul>
+          </div>
+        </div>
       </div>
     </section>
 
     <section>
-      <div>
-        <h3>Contato</h3>
+      <div class="container">
+        <div class="especialidade">
+          <h3>Uma clinica de multiespecialidade</h3>
+          <p>
+            Nossa clinica possui diversas especialidades. Como ortopedia,
+            pediatria,<br> geriatria, psicologia, fisioterapia e outros.
+          </p>
+        </div>
+
+        <div class="especialidade-imagem">
+
+          <figure>
+            <img src="./assets/ortopedia.png" alt="" />
+            <figcaption>ORTOPEDIA</figcaption>
+          </figure>
+
+          <figure>
+            <img src="./assets/pediatra.png" alt="" />
+            <figcaption>PEDIATRA</figcaption>
+          </figure>
+
+          <figure>
+            <img src="./assets/geriatra.png" alt="" />
+            <figcaption>GERIATRA</figcaption>
+          </figure>
+
+        </div>
+
+        <div class="horarios">
+          <a href="#">VER HORARIOS</a>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+
+      
+      <div class="contato">
+        <h3 name="contato">Contato</h3>
         <p>
           Nossa clinica está aberto de
           <strong>segunda a sabado das 6:00 as 21:00</strong>
@@ -112,6 +134,7 @@
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15282.191774727984!2d-49.28999261557617!3d-16.749392809061103!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1fc05cb9305d60cf!2sBuriti%20Shopping!5e0!3m2!1spt-BR!2sbr!4v1619528451654!5m2!1spt-BR!2sbr"
         ></iframe>
       </div>
+    </div>
     </section>
 
     <footer>
@@ -123,7 +146,7 @@
         <p>
           Endereço: Av. Ayrton Senna, 3000 - Barra da Tijuca, Rio de Janeiro
         </p>
-        <p>@RevinDeveloper 2021</p>
+        <p>©RevinDeveloper 2021</p>
       </div>
     </footer>
   </body>
