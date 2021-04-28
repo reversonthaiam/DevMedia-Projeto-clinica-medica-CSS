@@ -10,7 +10,7 @@ body {
 }
 
 .container {
-  width: 1024px;
+  max-width: 1024px;
   margin: 0 auto;
 }
 
@@ -18,8 +18,6 @@ header {
   width: 100%;
   height: 110px;
   background-color: rgb(37, 208, 214);
-  display: flex;
-  align-items: center;
 }
 
 .header {
@@ -57,7 +55,7 @@ nav {
 
 .main {
   background-image: url("../assets/recepcao2.jpg");
-  width: 100vw;
+  width: 100%;
   height: 90vh;
   background-size: cover;
   object-fit: cover;
@@ -143,8 +141,7 @@ section .sobre p {
   margin: 12px;
 }
 
-.horarios{
-  
+.horarios {
   display: flex;
   margin: 25px;
   justify-content: center;
@@ -161,34 +158,31 @@ section .sobre p {
   color: rgb(0, 0, 0);
   font-weight: bold;
   box-shadow: 1px 1px 4px rgb(0, 0, 0);
-  
 }
 
 /*############## CONTATO #############################*/
 
-.contato{
+.contato {
   margin-top: 50px;
   text-align: center;
 }
 
-.contato h3, p{
-  
+.contato h3,
+p {
   margin-bottom: 20px;
 }
 
-iframe{
+iframe {
   margin: 30px 0 70px 0;
   width: 100%;
   height: 300px;
   border-radius: 10px;
   box-shadow: 1px 1px 10px rgb(23, 70, 71);
- 
 }
-
 
 /*############## RODAPE #############################*/
 
-footer{
+footer {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -198,7 +192,170 @@ footer{
   font-weight: bold;
 }
 
-footer div img{
+footer div img {
   margin-top: 20px;
+}
 
+/*############## MEDIA QUERY #############################*/
+
+@media screen and (max-width: 425px) {
+  header {
+    height: 150px;
+  }
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav {
+    border-top: 1px solid rgb(133, 132, 132);
+    padding-top: 10px;
+  }
+  /*############## HEADER ^ #############################*/
+
+  .main {
+    height: 200px;
+    
+  }
+  .main-titulo h1 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 10px;
+    text-shadow: 3px 3px 4px rgb(150, 199, 223);
+  }
+
+  .sobre-img img{
+    display: none;
+  }
+
+  section .sobre {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  section .sobre h2 {
+    margin: 80px 0 30px;
+    font-size: 20px;
+  }
+  
+  section .sobre p {
+    font-size: 16px;
+    padding: 0 10px;
+
+  }
+  
+  
+  .sobre-titulo-e-lista {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  
+  }
+  
+  .sobre-titulo-e-lista div h3 {
+    margin-bottom: 22px;
+    text-align: center;
+    font-size: 18px;
+  }
+  
+  .sobre-titulo-e-lista div ul li {
+    margin-bottom: 7px;
+    font-size: 14px;
+    
+
+  }
+
+  
+  .especialidade p {
+    margin: 0px 0 25px;
+    padding: 0 5px;
+  }
+  
+  .especialidade-imagem {
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+    justify-content: center;
+  }
+  
+
+  .especialidade-imagem figure img {
+    max-width: 100%;
+    max-height: 90%;
+    object-fit: cover;
+  }
+
+  figure{
+    width: calc(100% / 2.3); 
+    height: 100%;
+  }
+  
+ 
+
+  /*############## CONTEUDO ^ #############################*/
+
+  /*############## FOOTER ^ #############################*/
+}
+
+@media screen and (max-width: 768px) {
+
+  .main {
+    height: 300px;
+   
+  }
+
+  .sobre-img img{
+    display: none;
+  }
+
+  .especialidade-imagem {
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+    justify-content: center;
+  }
+  
+
+  .especialidade-imagem figure img {
+    max-width: 100%;
+    max-height: 90%;
+    object-fit: cover;
+  }
+
+  figure{
+    width: calc(100% / 2.3); 
+    height: 100%;
+  }
+
+
+}
+
+@media screen and (max-width: 1024px) {
+
+  .main {
+    height: 400px;
+   
+  }
+
+  .especialidade-imagem {
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+    justify-content: center;
+  }
+  
+  figure{
+    width: calc(100% / 2.3); 
+    height: 100%;
+  }
+
+  .especialidade-imagem figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+ 
 }
