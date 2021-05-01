@@ -447,84 +447,167 @@ footer div img {
   text-decoration: none;
 }
 .categoria ul li a:hover {
-  
   color: rgb(21, 143, 214);
-  
+
   transition: 1s;
 }
 
-main div h1{
+main div h1 {
   display: flex;
   justify-content: center;
   margin: 30px 0px 50px;
 }
 
-.cabecalho{
+.cabecalho {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  margin-bottom: 10px;
+  margin: 40px 0px 5px;
 }
 
-section div h2{
-  margin: 20px 0px ;
+section div h2 {
+  margin: 20px 0px;
 }
 
-.conf-table{
+.conf-table {
   display: flex;
-  justify-content: space-around;
-  
+  height: 240px;
+  margin-bottom: 50px;
 }
 
-.conf-table figure{
-  width: calc(100%/3);
-  
-}
-
-.conf-table figure img{
-  width: 100%;
-}
-
-.tamanho-tabela{
- 
-}
-
-.conf-table div table{
+.conf-table img {
+  width: 30%;
   height: 100%;
-
-  
- 
-  border-collapse: collapse;
-  text-align: center;
-  
+  object-fit: cover;
 }
 
-.conf-table div table thead{
-
+.conf-table table {
+  text-align: left;
+  width: 70%;
+  height: 100%;
+  border-spacing: 0;
 }
 
-.conf-table div table thead tr th{
-  border: 1px solid black;
-  font-weight: bold;
+.conf-table table thead {
+  background-color: rgb(37, 208, 214);
+}
+
+.conf-table table thead tr th {
+  color: white;
+  padding: 10px;
+  font-weight: 800;
   font-size: 18px;
-  padding: 5px;
-
-
-
 }
 
-.conf-table div table tbody{
-  
-  
-
+.conf-table table tbody tr td {
+  padding: 10px;
+  font-size: 16px;
+  color: black;
+}
+.conf-table table tbody tr:nth-of-type(2n + 1) {
+  background-color: rgb(143, 143, 143);
+}
+.conf-table table tbody tr {
+  background-color: rgb(226, 226, 226);
 }
 
-.conf-table div table tbody tr td{
-  border: 1px solid black;
-  padding: 0px 8px;
+
+/*######################### media query especialidade #############################*/
+@media screen and (max-width: 425px) {
+  .categoria ul{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .categoria ul li{
+    margin: 7px;
+  }
+
+  .titulo-h1{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  main div h1{
+    margin-bottom: 20px;
+  }
+
+  .cabecalho p{
+    padding: 0 20px;
+  }
+
+  .conf-table{
+    display: flex;
+    justify-content: center;
+    
+  }
+
+  .conf-table img{
+    display: none;
+  }
+  .conf-table table{
+    width: 100%;
+  }
+
   
+}
 
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  .categoria ul{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  .categoria ul li{
+    margin: 7px;
+  }
 
+  .titulo-h1{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    
+  }
+  main div h1{
+    margin-bottom: 20px;
+  }
+
+  .cabecalho p{
+    padding: 0 20px;
+  }
+  .conf-table{
+    display: flex;
+    justify-content: center;
+    
+  }
+
+  .conf-table img{
+    display: none;
+  }
+  .conf-table table{
+    width: 90%;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  
+  .cabecalho p{
+    padding: 0 80px;
+  } 
+
+  .conf-table-total {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+
+  .conf-table{
+    width: 90%;
+  }
 }
 
